@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  engine-api:
+    image: whites32/predictive-maintenance-api-s:latest
+    ports:
+      - "8000:8000"
+    restart: always
+    container_name: predict-pulse-api

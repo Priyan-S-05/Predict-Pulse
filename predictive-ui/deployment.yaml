@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictive-maintenance-api
+spec:
+  replicas: 2  # Runs two copies for high availability
+  selector:
+    matchLabels:
+      app: maintenance-api
+  template:
+    metadata:
+      labels:
+        app: maintenance-api
+    spec:
+      containers:
+      - name: api-container
+        image: whites32/predictive-maintenance-api-s:latest
+        ports:
+        - containerPort: 8000
+        resources:
+          limits:
+            cpu: "500m"
+          requests:
+            cpu: "250m"

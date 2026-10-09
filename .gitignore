@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.dvc
+.venv/
+predictive_maintenance_api/models/*.pkl
+predictive_maintenance_api/models/*.joblib
+*.h5
+*.model
+
+# Data
+# dataset.csv is tracked for reproducibility
+*.zip
+
+# Secrets
+notes.txt
+*.pem
+*.ppk
+*.key
+.env
+*.wps
+*.docx
+*.pdf
+*.pptx
+
+# Node
+node_modules/
+build/
+dist/
+dist.zip
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Docker Desktop Installer.exe
+
+# Archive / local
+archive/
